@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage Selector</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex justify-center items-center h-screen bg-gray-100">
+
+    <div class="flex items-center space-x-4">
+        <!-- Stage 1 -->
+        <div class="relative flex flex-col items-center">
+            <div class="w-10 h-10 rounded-full border-2 border-green-500 flex items-center justify-center bg-green-500 cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-3-3a1 1 0 011.414-1.414L9 11.586l6.293-6.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd" />
+                </svg>
+            </div>
+            <span class="mt-2 text-sm">Stage 1</span>
+        </div>
+        
+        <!-- Line connecting stages -->
+        <div class="h-px w-10 bg-gray-300"></div>
+        
+        <!-- Stage 2 -->
+        <div class="relative flex flex-col items-center">
+            <div class="w-10 h-10 rounded-full border-2 border-green-500 flex items-center justify-center bg-green-500 cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-3-3a1 1 0 011.414-1.414L9 11.586l6.293-6.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd" />
+                </svg>
+            </div>
+            <span class="mt-2 text-sm">Stage 2</span>
+        </div>
+        
+        <!-- Line connecting stages -->
+        <div class="h-px w-10 bg-gray-300"></div>
+        
+        <!-- Stage 3 -->
+        <div class="relative flex flex-col items-center">
+            <div class="w-10 h-10 rounded-full border-2 border-gray-300 flex items-center justify-center bg-white cursor-pointer">
+                <span class="text-gray-500">3</span>
+            </div>
+            <span class="mt-2 text-sm">Stage 3</span>
+        </div>
+        <!-- Line connecting stages -->
+        <div class="h-px w-10 bg-gray-300"></div>
+        <!-- Stage 4 -->
+        <div class="relative flex flex-col items-center">
+            <div class="w-10 h-10 rounded-full border-2 border-gray-300 flex items-center justify-center bg-white cursor-pointer">
+                <span class="text-gray-500">4</span>
+            </div>
+            <span class="mt-2 text-sm">Stage 4</span>
+        </div>
+    </div>
+
+</body>
+
+</html>
