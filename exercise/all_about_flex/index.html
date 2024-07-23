@@ -1,0 +1,78 @@
+<!-- Boilerplate code for html with tailwind css -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Flexbox Fundamentals</title>
+
+    <style>
+        body {
+            margin-top: 50px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-center text-2xl font-bold mt-8">Flex row (default flex)</h1>
+    <div class="flex bg-yellow-200">
+        <div class="w-1/4 bg-green-500 p-4">1/4</div>
+        <div class="w-2/4 bg-blue-500 p-4">2/4</div>
+    </div>
+
+    <h1 class="text-center text-2xl font-bold mt-8">Flex Column</h1>
+    <div class="flex flex-col bg-yellow-200">
+        <div class="w-1/4 bg-green-500 p-4">1/4</div>
+        <div class="w-3/4 bg-blue-500 p-4">3/4</div>
+    </div>
+
+    <h1 class="text-center text-2xl font-bold mt-8">Inline flex</h1>
+    <p class="text-justify p-2 text-xl"> 
+        When a flex container is created, the container itself takes up the entire row.
+        
+        <br/>
+        <br/>
+
+        But when we make a container inline-flex, the container only takes up as much space as its content requires</p>
+    </p>
+    <div class="inline-flex bg-yellow-200">
+        <div class="w-[400px] bg-green-500 p-4">400px</div>
+        <div class="w-[800px] bg-blue-500 p-4">800px</div>
+    </div>
+
+    <span><---- Here is the free space after the inline flex container ----></span>
+
+    <h1 class="text-center text-2xl font-bold mt-8">Horizontal centering of items - flex row</h1>
+    <p class="text-justify p-2 text-xl"> 
+        "Justify" works along the flex direction
+        
+        <br/>
+        <br/>
+
+        "items" works along the perpendicular to the flex direction</p>
+    </p>
+    <div class="flex bg-yellow-200 justify-center">
+        <div class="w-[400px] bg-green-500 p-4">400px</div>
+        <div class="w-[800px] bg-blue-500 p-4">800px</div>
+    </div>
+
+    <h1 class="text-center text-2xl font-bold mt-8">Horizontal centering of items - flex col</h1>
+    <div class="flex flex-col bg-yellow-200 items-center">
+        <div class="w-1/4 bg-green-500 p-4">1/4</div>
+        <div class="w-3/4 bg-blue-500 p-4">3/4</div>
+    </div>
+
+    <h1 class="text-center text-2xl font-bold mt-8">Vertical centering of items - flex row</h1>
+    <div class="flex bg-yellow-200 items-center h-[100px]">
+        <div class="w-1/4 bg-green-500 p-4">1/4</div>
+        <div class="w-2/4 bg-blue-500 p-4">2/4</div>
+    </div>
+
+    <h1 class="text-center text-2xl font-bold mt-8">Vertical and horizontal centering of items - flex row</h1>
+    <div class="flex bg-yellow-200 items-center justify-center h-[100px]">
+        <div class="w-1/4 bg-green-500 p-4">1/4</div>
+        <div class="w-2/4 bg-blue-500 p-4">2/4</div>
+    </div>
